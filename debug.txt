@@ -1,0 +1,327 @@
+running install_egg_info
+Writing /tmp/tmptXMNS7/one_click_installer-0.1.egg-info
+WARNING: the following files are not recognized by DistUtilsExtra.auto:
+  debug.txt
+  help/C/figures/icon.png
+  help/C/index.page
+  help/C/preferences.page
+  help/C/topic1.page
+  one-click-installer.desktop.in
+  po/one-click-installer.pot
+Searching packages which provide required Python modules:
+   LaunchpadIntegration ... python-launchpad-integration
+   gi.repository ... python-gobject
+   glib ... python-gobject
+   gtk ... python-gtk2
+dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): 
+dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): -Wl,-Bsymbolic-functions
+dpkg-buildpackage: source package one-click-installer
+dpkg-buildpackage: source version 0.1
+dpkg-buildpackage: source changed by Joe Simpson <kennydude@carl>
+dpkg-buildpackage: host architecture amd64
+test -x debian/rules
+dh_testroot
+dh_clean 
+cd . && \
+		python setup.py clean \
+		-a
+running clean
+WARNING: the following files are not recognized by DistUtilsExtra.auto:
+  debug.txt
+  help/C/figures/icon.png
+  help/C/index.page
+  help/C/preferences.page
+  help/C/topic1.page
+  one-click-installer.desktop.in
+  po/one-click-installer.pot
+rm -rf debian/python-module-stampdir
+find "/home/kennydude/Dev/one-click-installer" -name '*.py[co]' -delete
+find "/home/kennydude/Dev/one-click-installer" -name __pycache__ -type d -empty -delete
+find "/home/kennydude/Dev/one-click-installer" -prune -name '*.egg-info' -exec rm -rf '{}' ';'
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building one-click-installer in one-click-installer_0.1.tar.gz
+dpkg-source: info: building one-click-installer in one-click-installer_0.1.dsc
+test -x debian/rules
+mkdir -p "."
+mkdir -p debian/python-module-stampdir
+cd . && \
+		python setup.py build \
+		--build-base="/home/kennydude/Dev/one-click-installer/./build"
+running build
+running build_py
+creating /home/kennydude/Dev/one-click-installer/build
+creating /home/kennydude/Dev/one-click-installer/build/lib.linux-x86_64-2.7
+creating /home/kennydude/Dev/one-click-installer/build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/one_click_installerconfig.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/helpers.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/Builder.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/Window.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/__init__.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer_lib
+creating /home/kennydude/Dev/one-click-installer/build/lib.linux-x86_64-2.7/one_click_installer
+copying one_click_installer/OneClickInstallerWindow.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer
+copying one_click_installer/PleasewaitdialogDialog.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer
+copying one_click_installer/__init__.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer
+running build_scripts
+creating /home/kennydude/Dev/one-click-installer/build/scripts-2.7
+copying and adjusting bin/one-click-installer -> /home/kennydude/Dev/one-click-installer/./build/scripts-2.7
+changing mode of /home/kennydude/Dev/one-click-installer/./build/scripts-2.7/one-click-installer from 644 to 755
+running build_i18n
+intltool-update -p -g one-click-installer
+intltool-merge -d po one-click-installer.desktop.in build/share/applications/one-click-installer.desktop
+Merging translations into build/share/applications/one-click-installer.desktop.
+running build_icons
+running build_help
+WARNING: the following files are not recognized by DistUtilsExtra.auto:
+  debug.txt
+touch debian/python-module-stampdir/one-click-installer
+test -x debian/rules
+dh_testroot
+dh_clean -k 
+dh_installdirs -A 
+mkdir -p "."
+mkdir -p debian/python-module-stampdir
+cd . && \
+		python setup.py build \
+		--build-base="/home/kennydude/Dev/one-click-installer/./build"
+running build
+running build_py
+copying one_click_installer_lib/one_click_installerconfig.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/helpers.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/Builder.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/Window.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/__init__.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer/OneClickInstallerWindow.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer
+copying one_click_installer/PleasewaitdialogDialog.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer
+copying one_click_installer/__init__.py -> /home/kennydude/Dev/one-click-installer/./build/lib.linux-x86_64-2.7/one_click_installer
+running build_scripts
+running build_i18n
+intltool-update -p -g one-click-installer
+running build_icons
+running build_help
+WARNING: the following files are not recognized by DistUtilsExtra.auto:
+  debug.txt
+touch debian/python-module-stampdir/one-click-installer
+if [ -d ./po ]; then \
+	    if grep -q intltool ./po/Makefile*; then \
+		if [ -x /usr/bin/intltool-update ]; then \
+		    cd ./po; /usr/bin/intltool-update -p --verbose || true; \
+		elif [ -x ./intltool-update ]; then \
+		    cd ./po; env XGETTEXT=/usr/bin/xgettext ../intltool-update -p --verbose || true; \
+		else \
+		    echo 'langpack.mk: po/Makefile* mentions intltool, but intltool-update is not available'; \
+		    exit 1; \
+		fi; \
+	    elif [ -e ./po/Makefile ]; then \
+	        DOMAIN=$(grep --max-count 1 '^GETTEXT_PACKAGE[[:space:]]*=' ./po/Makefile | sed 's/^.*=[[:space:]]\([^[:space:]]\)/\1/'); \
+	        if [ "$DOMAIN" ]; then \
+	            echo "langpack.mk: Generating $DOMAIN.pot..."; \
+	            make -C ./po "$DOMAIN.pot" || true; \
+	        fi; \
+	    fi; \
+	fi
+if [ -d ./help ]; then \
+	    cd ./help; make pot || true; \
+	fi
+make[1]: Entering directory `/home/kennydude/Dev/one-click-installer/help'
+make[1]: Leaving directory `/home/kennydude/Dev/one-click-installer/help'
+Adding cdbs dependencies to debian/one-click-installer.substvars
+dh_installdirs -pone-click-installer 
+cd . && \
+		python setup.py install \
+		--root="/home/kennydude/Dev/one-click-installer/debian/one-click-installer/" \
+		--install-purelib=/usr/lib/python2.7/site-packages/ \
+		--prefix=/usr --no-compile -O0 --install-layout=deb 
+running install
+>>>>>>>>>>  /home/kennydude/Dev/one-click-installer
+running build
+running build_py
+copying one_click_installer_lib/one_click_installerconfig.py -> build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/helpers.py -> build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/Builder.py -> build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/Window.py -> build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer_lib/__init__.py -> build/lib.linux-x86_64-2.7/one_click_installer_lib
+copying one_click_installer/OneClickInstallerWindow.py -> build/lib.linux-x86_64-2.7/one_click_installer
+copying one_click_installer/PleasewaitdialogDialog.py -> build/lib.linux-x86_64-2.7/one_click_installer
+copying one_click_installer/__init__.py -> build/lib.linux-x86_64-2.7/one_click_installer
+running build_scripts
+running build_i18n
+intltool-update -p -g one-click-installer
+intltool-merge -d po one-click-installer.desktop.in build/share/applications/one-click-installer.desktop
+Merging translations into build/share/applications/one-click-installer.desktop.
+running build_icons
+running build_help
+running install_lib
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages/one_click_installer_lib
+copying build/lib.linux-x86_64-2.7/one_click_installer_lib/one_click_installerconfig.py -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages/one_click_installer_lib
+copying build/lib.linux-x86_64-2.7/one_click_installer_lib/helpers.py -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages/one_click_installer_lib
+copying build/lib.linux-x86_64-2.7/one_click_installer_lib/Builder.py -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages/one_click_installer_lib
+copying build/lib.linux-x86_64-2.7/one_click_installer_lib/Window.py -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages/one_click_installer_lib
+copying build/lib.linux-x86_64-2.7/one_click_installer_lib/__init__.py -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages/one_click_installer_lib
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages/one_click_installer
+copying build/lib.linux-x86_64-2.7/one_click_installer/OneClickInstallerWindow.py -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages/one_click_installer
+copying build/lib.linux-x86_64-2.7/one_click_installer/PleasewaitdialogDialog.py -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages/one_click_installer
+copying build/lib.linux-x86_64-2.7/one_click_installer/__init__.py -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages/one_click_installer
+running install_scripts
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/bin
+copying build/scripts-2.7/one-click-installer -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/bin
+changing mode of /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/bin/one-click-installer to 755
+running install_data
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/mime
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/mime/packages
+copying one-click-installer.xml -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/mime/packages
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/one-click-installer
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/one-click-installer/ui
+copying data/ui/one_click_installer_window.xml -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/one-click-installer/ui
+copying data/ui/PleasewaitdialogDialog.ui -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/one-click-installer/ui
+copying data/ui/pleasewaitdialog_dialog.xml -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/one-click-installer/ui
+copying data/ui/OneClickInstallerWindow.ui -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/one-click-installer/ui
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/doc
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/doc/one-click-installer
+copying README.markdown -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/doc/one-click-installer
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/applications
+copying build/share/applications/one-click-installer.desktop -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/applications
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/gnome
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/gnome/help
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/gnome/help/one-click-installer
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/gnome/help/one-click-installer/C
+copying help/C/index.page -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/gnome/help/one-click-installer/C
+copying help/C/topic1.page -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/gnome/help/one-click-installer/C
+copying help/C/preferences.page -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/gnome/help/one-click-installer/C
+creating /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/gnome/help/one-click-installer/C/figures
+copying help/C/figures/icon.png -> /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/share/gnome/help/one-click-installer/C/figures
+running install_egg_info
+Writing /home/kennydude/Dev/one-click-installer/debian/one-click-installer/usr/lib/python2.7/site-packages/one_click_installer-0.1.egg-info
+WARNING: the following files are not recognized by DistUtilsExtra.auto:
+  debug.txt
+dh_installdocs -pone-click-installer ./AUTHORS 
+dh_installexamples -pone-click-installer 
+dh_installman -pone-click-installer  
+dh_installinfo -pone-click-installer  
+dh_installmenu -pone-click-installer 
+dh_installcron -pone-click-installer 
+dh_installinit -pone-click-installer  
+dh_installdebconf -pone-click-installer 
+dh_installemacsen -pone-click-installer   
+dh_installcatalogs -pone-click-installer 
+dh_installpam -pone-click-installer 
+dh_installlogrotate -pone-click-installer 
+dh_installlogcheck -pone-click-installer 
+dh_installchangelogs -pone-click-installer  
+dh_installudev -pone-click-installer 
+dh_lintian -pone-click-installer 
+dh_bugfiles -pone-click-installer 
+dh_install -pone-click-installer  
+dh_link -pone-click-installer  
+dh_installmime -pone-click-installer 
+dh_pysupport -pone-click-installer   
+dh_strip -pone-click-installer  
+dh_compress -pone-click-installer  
+dh_fixperms -pone-click-installer  
+dh_makeshlibs -pone-click-installer  
+dh_installdeb -pone-click-installer 
+dh_perl -pone-click-installer 
+dh_shlibdeps -pone-click-installer    
+echo "langpack.mk: add translation domain to one-click-installer"; \
+	if [ -e ./po/Makefile ]; then \
+	    DOMAIN=$(grep --max-count 1 '^GETTEXT_PACKAGE[[:space:]]*=' ./po/Makefile | sed 's/^.*=[[:space:]]*\([^[:space:]]\)/\1/'); \
+	    if [ "$DOMAIN" ]; then \
+		for d in $(find debian/one-click-installer -type f \( -name "*.desktop" -o -name "*.directory" \) ); do \
+		    echo "langpack.mk: Replacing translations with domain $DOMAIN in $d..."; \
+		    sed -ri "/^(Name|GenericName|Comment|X-GNOME-FullName)\[/d; \
+		             /^[[:space:]]*\[Desktop Entry\]/,/^[[:space:]]*(\[|$)/ { /Desktop Entry/! s/^[[:space:]]*(\[|$)/X-Ubuntu-Gettext-Domain=$DOMAIN\n&/ }" $d; \
+		    grep -q ^X-Ubuntu-Gettext-Domain $d || echo "X-Ubuntu-Gettext-Domain=$DOMAIN" >> $d; \
+		done; \
+                for d in $(find debian/one-click-installer -type f -name "*.server" ); do \
+                    echo "langpack.mk: Adding translation domain $DOMAIN to $d..."; \
+                    sed -i "s/<oaf_server\>/<oaf_server ubuntu-gettext-domain=\"$DOMAIN\"/" $d; \
+                done; \
+                for d in $(find debian/one-click-installer -type f -name "*.schemas" ); do \
+                    echo "langpack.mk: Replacing translations with domain $DOMAIN in $d..."; \
+		    GETTEXT_DOMAIN="$DOMAIN" perl /usr/lib/cdbs/strip-schema.pl $d > $d.new; mv $d.new $d; \
+                done; \
+                for d in $(find debian/one-click-installer -type f -name "*.policy" ); do \
+                    echo "langpack.mk: Replacing translations with domain $DOMAIN in $d..."; \
+		            sed -i -e "s/<message>\(.*\)<\/message>/<message gettext-domain=\"$DOMAIN\">\1<\/message>/" \
+                           -e "s/<description>\(.*\)<\/description>/<description gettext-domain=\"$DOMAIN\">\1<\/description>/" \
+                           -e "/<message xml:lang=\".*\">.*<\/message>/d" \
+                           -e "/<description xml:lang=\".*\">.*<\/description>/d" $d; \
+                done; \
+	    fi; \
+	fi
+langpack.mk: add translation domain to one-click-installer
+dh_gencontrol -pone-click-installer  
+# only call dh_scour for packages in main
+if grep -q '^Component:[[:space:]]*main' /CurrentlyBuilding 2>/dev/null; then dh_scour -pone-click-installer ; fi
+# symlink identical documentation to depending packages
+[ -n "$CDBS_NO_DOC_SYMLINKING" ] || \
+	[ -h debian/one-click-installer/usr/share/doc ] || \
+	[ -h debian/one-click-installer/usr/share/doc/one-click-installer ] || \
+	[ ! -d debian/one-click-installer/usr/share/doc ] || \
+	myarch=$(sed -n -e's/^Architecture: *//p' debian/one-click-installer/DEBIAN/control); \
+	for dep in `perl -ne 'if (/^(Pre-)?Depends:/) {s/^\w+://; foreach (split /,/) { split; print($_[0], "\n"); } }' debian/one-click-installer/DEBIAN/control`; do \
+	    if [ -d debian/$dep/usr/share/doc ]; then \
+	        thisarch=$(sed -n -e's/^Architecture: *//p' debian/$dep/DEBIAN/control 2>/dev/null); \
+	        if [ "x$myarch" != "x$thisarch" ] && [ "x$thisarch" = xall ]; then \
+	            continue; \
+	        fi; \
+	        if [ -L debian/one-click-installer/usr/share/doc/one-click-installer ]; then \
+	            continue; \
+	        fi; \
+                echo "Searching for duplicated docs in dependency $dep..."; \
+                rootdir=`pwd`; \
+                (cd debian/one-click-installer/usr/share/doc/one-click-installer; find -type f ! -name copyright | while read f; do \
+                    thisfile="$rootdir/debian/one-click-installer/usr/share/doc/one-click-installer/$f"; \
+                    depfile="$rootdir/debian/$dep/usr/share/doc/$dep/$f"; \
+                    if [ -f $depfile -o -L $depfile ] && zcmp $thisfile $depfile >/dev/null; then \
+                        echo "  symlinking $f in one-click-installer to file in $dep"; \
+                        rm $thisfile; ln -s /usr/share/doc/$dep/$f $thisfile; \
+                    fi; \
+                done ); \
+            fi; \
+	done
+# symlink identical Gnome help files within packages
+if [ -z "$CDBS_NO_GNOME_HELP_SYMLINKING" ] && [ -d debian/one-click-installer/usr/share/gnome/help ]; then \
+            cd debian/one-click-installer && LC_ALL=C fdupes -r1nq usr/share/gnome/help | while read s; do \
+                set -- $(echo $s | tr ' ' '\n' | sort); \
+                f=$1; shift; \
+                for d; do \
+                    echo "symlinking duplicate Gnome help file $d to $f"; \
+                    rm $d; ln -s /$f $d; \
+                done; \
+            done; \
+	fi
+dh_link -p one-click-installer
+dh_md5sums -pone-click-installer 
+dh_builddeb -pone-click-installer 
+dpkg-deb: building package `one-click-installer' in `../one-click-installer_0.1_all.deb'.
+test -x debian/rules
+dh_testroot
+dh_clean 
+cd . && \
+		python setup.py clean \
+		-a
+running clean
+removing 'build' (and everything under it)
+WARNING: the following files are not recognized by DistUtilsExtra.auto:
+  debug.txt
+  help/C/figures/icon.png
+  help/C/index.page
+  help/C/preferences.page
+  help/C/topic1.page
+  one-click-installer.desktop.in
+  po/one-click-installer.pot
+rm -rf debian/python-module-stampdir
+find "/home/kennydude/Dev/one-click-installer" -name '*.py[co]' -delete
+find "/home/kennydude/Dev/one-click-installer" -name __pycache__ -type d -empty -delete
+find "/home/kennydude/Dev/one-click-installer" -prune -name '*.egg-info' -exec rm -rf '{}' ';'
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
+Ubuntu packaging created in debian/
+Ubuntu package has been successfully created in ../one-click-installer_0.1_all.deb

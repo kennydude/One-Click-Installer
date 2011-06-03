@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-06-03 18:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/ui/OneClickInstallerWindow.ui.h:1
+msgid ""
+"<big>\n"
+"One Click Installer\n"
+"</big>"
+msgstr ""
+
+#: ../data/ui/OneClickInstallerWindow.ui.h:4
+msgid "Cancel"
+msgstr ""
+
+#: ../data/ui/OneClickInstallerWindow.ui.h:5
+msgid "Created by @kennydude"
+msgstr ""
+
+#: ../data/ui/OneClickInstallerWindow.ui.h:6
+msgid "Install Application"
+msgstr ""
+
+#: ../data/ui/OneClickInstallerWindow.ui.h:7
+#: ../one-click-installer.desktop.in.h:1
+msgid "One Click Installer"
+msgstr ""
+
+#: ../data/ui/OneClickInstallerWindow.ui.h:8
+msgid ""
+"You are going to install an application external to Ubuntu.\n"
+"\n"
+"You will need your administrator password at-hand in order to do this. "
+"Bellow is a list of changes that installing this software will do to your "
+"computer."
+msgstr ""
+
+#: ../one_click_installer/OneClickInstallerWindow.py:44
+#, python-format
+msgid "Add the source %s to your system"
+msgstr ""
+
+#: ../one_click_installer/OneClickInstallerWindow.py:46
+#, python-format
+msgid "Install the pakage %s"
+msgstr ""
+
+#: ../one_click_installer/OneClickInstallerWindow.py:52
+msgid "ERROR: Couldn't read that file!"
+msgstr ""
+
+#: ../one_click_installer/OneClickInstallerWindow.py:72
+msgid "Please enter your password to install the software"
+msgstr ""
+
+#: ../one_click_installer/OneClickInstallerWindow.py:77
+msgid "Software was installed. Thanks for using One Click Installer"
+msgstr ""
+
+#: ../one_click_installer/OneClickInstallerWindow.py:92
+msgid "Please wait..."
+msgstr ""
+
+#. Add the column to the treeview
+#: ../one_click_installer/OneClickInstallerWindow.py:103
+msgid "Item"
+msgstr ""
+
+#: ../one_click_installer/__init__.py:34
+msgid "Show debug messages (-vv debugs one_click_installer_lib also)"
+msgstr ""
+
+#: ../one-click-installer.desktop.in.h:2
+msgid "OneClickInstaller application"
+msgstr ""
+
+#: ../data/ui/PleasewaitdialogDialog.ui.h:1
+msgid ""
+"One Click Installer is now installing your software.\n"
+"This may take a few moments"
+msgstr ""
+
+#: ../data/ui/PleasewaitdialogDialog.ui.h:3
+msgid "Please wait.."
+msgstr ""

@@ -1,0 +1,9 @@
+{
+	"whatisthis" : "ONE CLICK INSTALLER FOR UBUNTU. CREATED BY KENNYDUDE",
+	"sources" : [
+		"ppa:sikon/steadyflow"
+	],
+	"packages" : [
+		"steadyflow"
+	]
+}

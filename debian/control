@@ -1,0 +1,25 @@
+Source: one-click-installer
+Section: python
+Priority: extra
+Build-Depends: cdbs (>= 0.4.43),
+ debhelper (>= 6),
+ python,
+ python-support (>= 0.6.4),
+ python-distutils-extra (>= 2.10)
+Maintainer: Joe Simpson <headbangerkenny@googlemail.com>
+Standards-Version: 3.8.3
+XS-Python-Version: current
+
+Package: one-click-installer
+Architecture: all
+XB-Python-Version: ${python:Versions}
+Depends: ${misc:Depends},
+ ${python:Depends},
+ python-gobject,
+ python-launchpad-integration,
+ python-gtk2,
+ yelp
+Description: Easy PPA installation!
+ Easy PPA installation! This allows you to quickly add PPAs and packages
+ without having to fiddle around with silly command line prompts, which
+ can be dangerous!

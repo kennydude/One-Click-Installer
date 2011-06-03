@@ -1,0 +1,11 @@
+[Desktop Entry]
+_Name=One Click Installer
+_Comment=OneClickInstaller application
+Categories=GNOME;Utility;
+Exec=one-click-installer %f
+Icon=drive-optical
+NoDisplay=True
+Terminal=false
+Type=Application
+MimeType=application/x-one-click-installer
+

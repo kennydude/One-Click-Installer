@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>One Click Installer</title>
+<style type="text/css">
+body,html{margin:0; font:13px/1.5 Helvetica Neue,Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif}
+#header{
+	color: #fff;
+	font-size: 25px;
+}
+#header, #download-button{
+	background: #DD4814;
+}
+#download{
+	text-align: center;
+}
+#download-button{
+	border-radius: 20px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+div, #download-button{
+	padding: 10px;
+}
+#install-guide{
+	background: #ccc;
+	margin-top: 20px;
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		One Click Installer
+	</div>
+	<div id="body">
+		Before you install the software using the One Click Installer, please ensure you have the 1-Click installer installed. If you do not have it installed, scroll down.
+	</div>
+	<div id="download">
+		<a href="" id="download-button">Download</a>
+	</div>
+	<script type="text/javascript">
+		document.getElementById("download-button").setAttribute("href", window.location.search.substring(1) );
+	</script>
+	<div id="install-guide">
+		<b>Installing the 1-Click Installer</b><br/>
+		Unfortunately Ubuntu doesn't have a 1-click installer pre-installed, however a lot of people would find it useful. If you want to install, open up Terminal (Go to the Launcher and type "Terminal"). Now a scary box like thing will appear, in the box copy and paste:
+	<pre>
+sudo add-apt-repository ppa:headbangerkenny/ppa
+sudo apt-get update
+sudo apt-get install one-click-installer
+	</pre>
+When that has finished, you should be able to open the file above.
+	</div>
+	<div id="me">
+		Created by <a href="http://twitter.com/kennydude">kennydude</a>
+	</div>
+</body>
+</html>
